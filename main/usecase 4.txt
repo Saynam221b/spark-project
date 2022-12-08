@@ -22,8 +22,8 @@ df.registerTempTable("Bus");
 
 val query = """Select * from (Select School_year,count(run_type) as count_of_accidents from Bus where Reason="Accident" group by School_year) sub order by count_of_accidents""""                 
 
-val answer1 = spark.sql(query)                                                                                                              
+val answer4 = spark.sql(query)                                                                                                              
 
-answer1.show                                                                                                                                
+answer4.show                                                                                                                                
 }                                                                                                                                           
 }

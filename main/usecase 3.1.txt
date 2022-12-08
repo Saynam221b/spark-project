@@ -22,8 +22,8 @@ df.registerTempTable("Bus");
 
 val query = """Select School_Year,count(Run_Type) from Bus where Number_Of_Students_In_The_Bus=0 group by School_year""""              
 
-val answer1 = spark.sql(query)                                                                                                              
+val answer3 = spark.sql(query)                                                                                                              
 
-answer1.show                                                                                                                                
+answer3.show                                                                                                                                
 }                                                                                                                                           
 }
